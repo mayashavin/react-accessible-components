@@ -1,0 +1,47 @@
+.textfield--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.textfield--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textfield--header-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.textfield--header-action[title]:focus::after {
+    content: attr(title);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-top: -2.3em;
+    position: absolute;
+    max-width: 200px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.textfield--header-action {
+    padding: 4px;
+    display: flex;
+}
+
+.textfield--input {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.textfield--input:read-only {
+    background-color: #f5f5f5;
+    border-color: transparent;
+}
